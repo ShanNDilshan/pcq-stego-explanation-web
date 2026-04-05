@@ -125,6 +125,66 @@ nav {
   box-shadow: 0 0 18px var(--green-glow-strong);
 }
 
+.nav-launch {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--green-dark), #004d28);
+  border: 1px solid var(--green-primary);
+  color: var(--green-primary);
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 0 14px rgba(0,255,136,0.2);
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.nav-launch::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--green-primary);
+  box-shadow: 0 0 6px var(--green-primary);
+  animation: pulse 2s ease-in-out infinite;
+}
+.nav-launch:hover {
+  background: linear-gradient(135deg, #004d28, #006636);
+  box-shadow: 0 0 24px rgba(0,255,136,0.4);
+  transform: translateY(-1px);
+}
+
+.btn-launch {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 34px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #004d28, #006636);
+  color: var(--green-primary);
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid var(--green-primary);
+  box-shadow: 0 0 30px rgba(0,255,136,0.25), inset 0 1px 0 rgba(0,255,136,0.15);
+  cursor: pointer;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+.btn-launch::before {
+  content: '';
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--green-primary);
+  box-shadow: 0 0 8px var(--green-primary);
+  animation: pulse 2s ease-in-out infinite;
+}
+.btn-launch:hover {
+  background: linear-gradient(135deg, #005f32, #007a3d);
+  box-shadow: 0 0 44px rgba(0,255,136,0.45), inset 0 1px 0 rgba(0,255,136,0.2);
+  transform: translateY(-3px);
+  color: #fff;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -787,8 +847,9 @@ footer {
     <li><a href="#comparison">Comparison</a></li>
     <li><a href="#team">Team</a></li>
   </ul>
-  <div class="nav-cta-wrap">
-    <a href="#architecture" class="nav-cta">View Architecture</a>
+  <div class="nav-cta-wrap" style="display:flex;gap:12px;align-items:center;">
+    <a href="#architecture" class="nav-cta">Architecture</a>
+    <a href="http://35.247.183.52:5500/" target="_blank" rel="noopener noreferrer" class="nav-launch" id="nav-launch-btn">Launch App</a>
   </div>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -811,6 +872,9 @@ footer {
   </p>
 
   <div class="hero-actions">
+    <a href="http://35.247.183.52:5500/" target="_blank" rel="noopener noreferrer" class="btn-launch" id="hero-launch-btn">
+      Try PQ-Stego Now
+    </a>
     <button class="btn-primary" onclick="document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'})">
       See How It Works
     </button>
