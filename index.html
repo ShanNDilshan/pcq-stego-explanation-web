@@ -844,7 +844,6 @@ footer {
     <li><a href="#solution">Solution</a></li>
     <li><a href="#how-it-works">How It Works</a></li>
     <li><a href="#results">Results</a></li>
-    <li><a href="#comparison">Comparison</a></li>
     <li><a href="#team">Team</a></li>
   </ul>
   <div class="nav-cta-wrap" style="display:flex;gap:12px;align-items:center;">
@@ -1193,75 +1192,6 @@ footer {
   </div>
 </section>
 
-<!-- Comparison Table -->
-<section id="comparison">
-  <div class="section-label">Competitive Analysis</div>
-  <h2 class="section-title">PQ-Stego vs. <span class="accent">The Alternatives</span></h2>
-  <p class="section-desc">Every competing approach leaves a critical gap. PQ-Stego closes them all.</p>
-
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Capability</th>
-          <th>Traditional Steganography</th>
-          <th>Classical Crypto + Stego</th>
-          <th>PQ-Stego</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Encryption Algorithm</td>
-          <td class="td-bad">None or RSA/ECC</td>
-          <td>RSA / ECC (quantum-vulnerable)</td>
-          <td class="td-good">Kyber + Dilithium (NIST PQC)</td>
-        </tr>
-        <tr>
-          <td>Quantum-Safe</td>
-          <td class="td-bad">✗ No</td>
-          <td class="td-bad">✗ No — breaks under quantum</td>
-          <td class="td-good">✓ Yes — lattice-based PQC</td>
-        </tr>
-        <tr>
-          <td>Embedding Strategy</td>
-          <td class="td-bad">Blind / Random</td>
-          <td class="td-bad">Blind / Uniform</td>
-          <td class="td-good">ML-guided, perception-aware</td>
-        </tr>
-        <tr>
-          <td>AI Steganalysis Resistance</td>
-          <td class="td-bad">Low — statistically detectable</td>
-          <td class="td-bad">Low — high entropy anomalies</td>
-          <td class="td-good">High — CNN-optimized zones</td>
-        </tr>
-        <tr>
-          <td>Capacity Estimation</td>
-          <td class="td-bad">None</td>
-          <td class="td-bad">None</td>
-          <td class="td-good">ML regression (R = 0.9991)</td>
-        </tr>
-        <tr>
-          <td>Media Support</td>
-          <td>Image only (typically)</td>
-          <td>Image only (typically)</td>
-          <td class="td-good">Image (.pgm) + Audio (.wav)</td>
-        </tr>
-        <tr>
-          <td>Payload Authentication</td>
-          <td class="td-bad">None</td>
-          <td>Digital signature (classical)</td>
-          <td class="td-good">Dilithium PQC signature + Checksum</td>
-        </tr>
-        <tr>
-          <td>Heatmap Guidance</td>
-          <td class="td-bad">None</td>
-          <td class="td-bad">None</td>
-          <td class="td-good">✓ Full spatial heatmap</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
 
 <!-- Team -->
 <section id="team">
@@ -1296,7 +1226,7 @@ footer {
       <img src="images/nalaka.jpg" alt="Dr. Nalaka Lankasena">
       <h3>Dr. Nalaka Lankasena</h3>
       <div class="role">Supervisor</div>
-      <div class="id">Senior Lecturer</div>
+      <div class="id">Senior Lecturer (Grade I)</div>
     </div>
     <div class="team-card">
       <img src="images/dimalsha.jpeg" alt="P.K.Y. Dimalsha">
